@@ -1,0 +1,98 @@
+@import './base.css';
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+/* .green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--cyan);
+}
+
+@media (min-width: 1024px) {
+  #app {
+    padding: 0 2rem;
+  }
+}
+
+a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* MARKDOWN */
+
+li {
+  padding-left: 4px;
+}
+
+li::marker {
+  color: var(--cyan);
+}
+
+ul,
+ol {
+  margin: 10px 0;
+}
+
+pre {
+  background: var(--dark-gray);
+  border-radius: 7px;
+  padding: 10px 15px;
+}
+
+p code,
+div code {
+  background: var(--dark-gray);
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+blockquote {
+  padding: 5px 5px 5px 15px;
+  border-left: 3px solid var(--cyan);
+  margin: 5px 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+hr {
+  unicode-bidi: unset;
+  border: 1px solid var(--medium-gray);
+  margin: 5px 0;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+th {
+  text-align: start;
+  background: var(--dark-gray);
+}
+th,
+td {
+  padding: 5px 10px;
+}
+td {
+  border: 1px solid var(--dark-gray);
+}
