@@ -14,6 +14,6 @@ export default defineConfig({
   build: {
     outDir: 'docs',
   },
-  base: '/', // for subdomains use full custom url
+  base: 'https://courtneymedellin.com/blog/', // for subdomains use full custom url
   assetsInclude: '**/*.md',
 });
