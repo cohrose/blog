@@ -14,7 +14,7 @@ export default defineConfig({
   build: {
     outDir: 'docs',
   },
-  //base: 'https://courtneymedellin.com/blog/', // for subdomains use full custom url
+  base: '/blog/',
   assetsInclude: '**/*.md',
   publicPath: process.env.NODE_ENV === 'production' ? '/blog/' : '/',
 });
