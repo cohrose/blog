@@ -2,10 +2,10 @@
 let posts = [
   { title: 'the title here', date: 'Oct 23, 2023', tag: 'Angular' },
   { title: 'really cool stuff', date: 'Oct 20, 2023', tag: 'Something' },
-  { title: 'more things here', date: 'Oct 22, 2023', tag: 'Code here' },
+  { title: 'more things here!', date: 'Oct 22, 2023', tag: 'Code here' },
   { title: 'the title here', date: 'Oct 21, 2023', tag: 'Angular' },
   { title: 'really cool stuff', date: 'Oct 20, 2023', tag: 'Something' },
-  { title: 'more things here', date: 'Oct 20, 2023', tag: 'Code here' },
+  { title: 'more things here!', date: 'Oct 20, 2023', tag: 'Code here' },
 ];
 </script>
 

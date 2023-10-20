@@ -16,5 +16,5 @@ export default defineConfig({
   },
   //base: 'https://courtneymedellin.com/blog/', // for subdomains use full custom url
   assetsInclude: '**/*.md',
-  publicPath: '/blog/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/blog/' : '/',
 });
