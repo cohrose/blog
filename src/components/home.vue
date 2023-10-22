@@ -32,6 +32,10 @@ let posts = [
 </template>
 
 <style scoped>
+h1 {
+  padding-top: 15px;
+}
+
 .blog {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

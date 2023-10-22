@@ -16,9 +16,9 @@ h6 {
   color: var(--cyan);
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 599px) {
   #app {
-    padding: 0 2rem;
+    padding: 1rem;
   }
 }
 
@@ -28,6 +28,24 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+/* height */
+::-webkit-scrollbar {
+  height: 12px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background: var(--dark-gray);
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  background: var(--medium-gray);
+  border-radius: 10px;
+  border: 3px solid var(--dark-gray);
+  border-left: 0px;
 }
 
 /* MARKDOWN */
@@ -80,7 +98,8 @@ a:hover {
 
 .markdown pre code {
   padding: 0;
-  white-space: pre-wrap;
+  display: block;
+  overflow-x: auto;
 }
 
 .markdown blockquote {

@@ -16,7 +16,7 @@ let name = $route.params.name;
 
 <template>
   <div>
-    <router-link to="/" class="link"><i class="fa-solid fa-arrow-left"></i>Back</router-link>
+    <!-- <router-link to="/" class="link"><i class="fa-solid fa-arrow-left"></i>Back</router-link> -->
     <div v-if="name == 'grid'"><grid /></div>
     <div v-if="name == 'centering'"><centering /></div>
     <div v-if="name == 'mediaqueries'"><mediaqueries /></div>
