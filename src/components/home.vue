@@ -1,11 +1,12 @@
 <script setup>
 let posts = [
-  { title: 'Grid', date: 'Oct 23, 2023', tag: 'Angular', route: 'grid' },
-  { title: 'TinyMCE', date: 'Oct 20, 2023', tag: 'Something', route: 'tinymce' },
-  { title: 'Date Time', date: 'Oct 22, 2023', tag: 'Code here', route: 'datetime' },
-  { title: 'Media Queries', date: 'Oct 21, 2023', tag: 'Angular', route: 'mediaqueries' },
-  { title: 'Centering', date: 'Oct 20, 2023', tag: 'Something', route: 'centering' },
-  { title: 'Custom Email Domains', date: 'Oct 20, 2023', tag: 'Code here', route: 'emaildomains' },
+  { title: 'Vue.js & Github Pages', date: 'Oct 22, 2023', tag: 'How To', route: 'githubvue' },
+  { title: 'Custom Email Domains', date: 'Sep 25, 2023', tag: 'How To', route: 'customemail' },
+  { title: 'TinyMCE', date: 'Sep 10, 2023', tag: 'How To', route: 'tinymce' },
+  { title: 'Date Time', date: 'July 21, 2023', tag: 'Functionality', route: 'datetime' },
+  { title: 'Media Queries', date: 'Feb 20, 2023', tag: 'Functionality', route: 'mediaqueries' },
+  { title: 'Grid', date: 'Feb 10, 2023', tag: 'Design', route: 'grid' },
+  { title: 'Centering', date: 'Feb 8, 2023', tag: 'Design', route: 'centering' },
 ];
 </script>
 
@@ -64,7 +65,7 @@ let posts = [
 }
 
 .tag span {
-  background: var(--cyan);
+  background: var(--cyan-80);
   color: var(--dark-gray);
   padding: 2px 4px;
   border-radius: 5px;

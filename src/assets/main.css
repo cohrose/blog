@@ -32,60 +32,91 @@ a:hover {
 
 /* MARKDOWN */
 
-li {
+.markdown p {
+  padding: 8px 0;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  padding-top: 15px;
+}
+
+.markdown {
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+}
+
+.markdown li {
   padding-left: 4px;
 }
 
-li::marker {
+.markdown li::marker {
   color: var(--cyan);
 }
 
-ul,
-ol {
+.markdown ul,
+.markdown ol {
   margin: 10px 0;
 }
 
-pre {
+.markdown pre {
   background: var(--dark-gray);
   border-radius: 7px;
   padding: 10px 15px;
+  margin: 5px 0;
 }
 
-p code,
-div code {
+.markdown code {
   background: var(--dark-gray);
   border-radius: 5px;
   padding: 2px 5px;
+  color: #ffcfca;
+  font-size: 13px;
 }
 
-blockquote {
+.markdown pre code {
+  padding: 0;
+  white-space: pre-wrap;
+}
+
+.markdown blockquote {
   padding: 5px 5px 5px 15px;
   border-left: 3px solid var(--cyan);
   margin: 5px 0;
 }
 
-strong {
+.markdown strong {
   font-weight: bold;
 }
 
-hr {
+.markdown del {
+  text-decoration: underline;
+  text-decoration-color: var(--cyan);
+  text-underline-offset: 2px;
+}
+
+.markdown hr {
   unicode-bidi: unset;
   border: 1px solid var(--medium-gray);
   margin: 5px 0;
 }
 
-table {
+.markdown table {
   border-collapse: collapse;
   margin: 15px 0;
 }
-th {
+.markdown th {
   text-align: start;
   background: var(--dark-gray);
 }
-th,
-td {
+.markdown th,
+.markdown td {
   padding: 5px 10px;
 }
-td {
+.markdown td {
   border: 1px solid var(--dark-gray);
 }

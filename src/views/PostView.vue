@@ -1,6 +1,14 @@
 <script setup>
 import { useRoute } from 'vue-router';
 import grid from '../components/posts/grid.vue';
+import centering from '../components/posts/centering.vue';
+import mediaqueries from '../components/posts/media-queries.vue';
+import datetime from '../components/posts/date-time.vue';
+import tinymce from '../components/posts/tinymce.vue';
+import customemail from '../components/posts/custom-email.vue';
+import githubvue from '../components/posts/github-vue.vue';
+
+// import test from '../components/posts/test.vue';
 
 let $route = useRoute();
 let name = $route.params.name;
@@ -9,8 +17,13 @@ let name = $route.params.name;
 <template>
   <div>
     <router-link to="/" class="link"><i class="fa-solid fa-arrow-left"></i>Back</router-link>
-    <h1>This is an post page {{ name }}</h1>
     <div v-if="name == 'grid'"><grid /></div>
+    <div v-if="name == 'centering'"><centering /></div>
+    <div v-if="name == 'mediaqueries'"><mediaqueries /></div>
+    <div v-if="name == 'datetime'"><datetime /></div>
+    <div v-if="name == 'tinymce'"><tinymce /></div>
+    <div v-if="name == 'customemail'"><customemail /></div>
+    <div v-if="name == 'githubvue'"><githubvue /></div>
   </div>
 </template>
 

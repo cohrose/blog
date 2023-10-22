@@ -1,61 +1,76 @@
 <script setup>
 import { marked } from 'marked';
-const code = `# This is a Heading 1
-## Heading 2 here
+const code = `# Grid
 
-> This is a quote
+Grid is an extremely powerful tool if you know how to use it properly.
 
-I just love **bold text**.
+You always want to make sure you're making your websites responsive, so don't forget to adjust the columns for each media size:
 
-Italicized text is the _cat's meow_.
+**HTML**
+\`\`\`html
+<div class="grid">
+  <div>Box One</div> 
+  <div>Box Two</div> 
+  <div>Box Three</div>
+</div>
+\`\`\`
 
-I love \`inline code\`
-
-There is a really good [article here](https://www.example.com)
-
-i really like ~~strike through words~~
-
----
-
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
-
-- First item
-- Second item
-- Third item
-- Fourth item
-
+**CSS**
 \`\`\`css
-.main {
-  margin: 30px;
-  * {
-    min-width: 300px;
+/* default */
+.grid { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  gap: 30px;
+}
+
+/* large devices */
+@media screen and (max-width: 1279px) {  
+  .grid { 
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px; 
+  }
+}
+
+/* medium devices */
+@media screen and (max-width: 959px) { 
+  .grid {  
+    grid-template-columns: 1fr 1fr;  
+    gap: 15px;  
+  }
+}
+
+/* small devices */
+@media screen and (max-width: 599px) { 
+  .grid {  
+    grid-template-columns: 1fr;  
+    gap: 10px;  
   }
 }
 \`\`\`
 
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+If you need the columns to be the ~exact~ same width you should use \`minmax\`:
+\`\`\`css 
+grid-template-columns: repeat(3, minmax(0, 1fr));
+\`\`\`
 
-## Doesn't Work
-### Checklist
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+## Grid Direction
+Depending on the design of your website, you may need a grid layout to have the direction of right to left.
+It's actually very simple, you only need to add one css property:
+\`\`\`css 
+.grid {  
+  direction: rtl; /* right to left */
+}
+\`\`\`
 
-### Highlight
-I need to highlight these ==very important words==.
+By default, this property is set to \`ltr\` (left to right).
 `;
 
 const mark = marked(code);
 </script>
 
 <template>
-  <div v-html="mark"></div>
+  <div v-html="mark" class="markdown"></div>
 </template>
 
 <style scoped></style>
