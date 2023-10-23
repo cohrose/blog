@@ -1,6 +1,6 @@
 <script setup>
 let posts = [
-  { title: 'Vue.js & Github Pages', date: 'Oct 22, 2023', tag: 'How To', route: 'githubvue' },
+  { title: 'Vue.js & GitHub Pages', date: 'Oct 22, 2023', tag: 'How To', route: 'githubvue' },
   { title: 'Custom Email Domains', date: 'Sep 25, 2023', tag: 'How To', route: 'customemail' },
   { title: 'TinyMCE', date: 'Sep 10, 2023', tag: 'How To', route: 'tinymce' },
   { title: 'Date Time', date: 'July 21, 2023', tag: 'Functionality', route: 'datetime' },

@@ -8,8 +8,10 @@ Common breakpoints are as follows:
 \`\`\`css
 /* small devices */ 
 @media screen and (max-width: 599px) {} 
+
 /* medium devices */ 
 @media screen and (max-width: 959px) {} 
+
 /* large devices */ 
 @media screen and (max-width: 1279px) {}
 \`\`\`
