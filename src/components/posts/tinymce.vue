@@ -4,7 +4,7 @@ const code = `# TinyMCE
 
 ## Angular Implementation
 
-Download all [tinymce](https://www.tiny.cloud/get-tiny/self-hosted/) files upload them into the assets folder.
+Download all [tinymce](https://www.tiny.cloud/get-tiny/self-hosted/) files and upload them into the assets folder.
 Add script tag to \`index.html\` to reference imported files. 
 \`\`\`html
 <script src="assets/tinymce/js/tinymce/tinymce.min.js"><\/script>

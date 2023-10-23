@@ -3,6 +3,7 @@ import { marked } from 'marked';
 const code = `# Media Queries
 
 When making responsive websites, you want to be consistent with your media queries so everything collapses at the same time.
+
 Common breakpoints are as follows:
 \`\`\`css
 /* small devices */ 
