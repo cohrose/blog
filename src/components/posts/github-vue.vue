@@ -32,7 +32,7 @@ However, if this project will be a on an additional repository, you will need to
 \`\`\`javascript
 export default defineConfig({
   build: {
-    outDir: 'repo-name',
+    outDir: 'docs',
   },
   base: '/repo-name/',
   publicPath: process.env.NODE_ENV === 'production' ? '/repo-name/' : '/',
